@@ -21,6 +21,7 @@ public class Run {
 		A.n = 9; 
 		System.out.printf("a1.n = %d , a2.n = %d \n", a1.n, a2.n);
 		
+		System.out.println("Test");
 	}
 
 }
