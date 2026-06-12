@@ -1,8 +1,9 @@
-package chapter15.page7;
+package chapter15.page7_2;
 
 import java.awt.Toolkit;
 
-public class ToolkitThread extends Thread {
+public class ToolkitThread2 implements Runnable{
+
 	@Override
 	public void run() {
 		Toolkit tk = Toolkit.getDefaultToolkit();
@@ -13,7 +14,6 @@ public class ToolkitThread extends Thread {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {}
 		}
-		
 	}
 
 }

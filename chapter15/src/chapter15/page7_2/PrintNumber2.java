@@ -1,6 +1,7 @@
-package chapter15.page7;
+package chapter15.page7_2;
 
-public class PrintNumber extends Thread {
+public class PrintNumber2 implements Runnable{
+
 	@Override
 	public void run() {
 		for (int i = 0; i < 5; i++) {
@@ -11,4 +12,5 @@ public class PrintNumber extends Thread {
 		}
 		
 	}
+
 }

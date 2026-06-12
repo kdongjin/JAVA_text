@@ -77,7 +77,6 @@ public class BookMenu {
 		System.out.printf("책정보 총 대여수: %5.0f ,책정보 평균 : %6.2f \n", sumAvgArr[0], sumAvgArr[1]);
 	}
 
-
 }
 
 

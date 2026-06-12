@@ -1,4 +1,4 @@
-package chapter15.page7;
+package chapter15.page7_2;
 
 import java.awt.Toolkit;
 
@@ -10,12 +10,14 @@ public class Run {
 		// 사운드기능을 작동(1초마다 사운드를 발생한다. 5번발생시킨다)
 		// 숫자를 출력한다. (1초마다 숫자를 1부터 5까지 출력한다.)
 		// 사운드 클래스. 
-		ToolkitThread tkt = new ToolkitThread();
-		tkt.start();
+		PrintNumber2 pn2 = new PrintNumber2();
+		Thread thread = new Thread(pn2);
+		
+		ToolkitThread2 tt2 = new ToolkitThread2();
+		Thread thread2 = new Thread(tt2);
 
-		//부모가 Thread  PrintNumber 스레드동작
-		PrintNumber pn = new PrintNumber();
-		pn.start();
+		thread.start();
+		thread2.start(); 
 		
 		System.out.println("The end");
 	}
