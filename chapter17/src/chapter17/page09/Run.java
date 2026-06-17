@@ -40,6 +40,12 @@ public class Run {
 		aList5.add("c");
 		String[] oArray = aList5.toArray(new String[0]);
 		System.out.println(Arrays.toString(oArray));
+		// List 구조에 contains 기능이 있는지 체크
+		if(aList5.contains("a") == true) {
+			System.out.println("list에 contains 기능이 있어요.");
+		}
+		//List 구조에 iterator 기능이 있는지 체크
+		
 	
 	}
 }
