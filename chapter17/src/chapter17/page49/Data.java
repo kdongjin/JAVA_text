@@ -33,6 +33,7 @@ public class Data implements Comparable<Data>{
 		return Objects.hash(no, name);
 	}
 
+	//값 - 값  , 문자열(compareTo)
 	@Override
 	public int compareTo(Data o) {
 		int result = this.no - o.no; 
