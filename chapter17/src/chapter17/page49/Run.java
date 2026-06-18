@@ -1,5 +1,6 @@
 package chapter17.page49;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -12,6 +13,8 @@ public class Run {
 		// TreeSet 정렬,검색 (comparable  구현이된다)
 		//추가기능 add
 		Set<Data> hset1 = new HashSet<Data>();
+		Set<Data> syncHSet = Collections.synchronizedSet(hset1); 
+		
 		hset1.add(new Data(1, "A"));
 		hset1.add(new Data(1, "B"));
 		hset1.add(new Data(1, "C"));

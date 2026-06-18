@@ -1,5 +1,6 @@
 package chapter17.page84;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -10,6 +11,7 @@ public class Run {
 	public static void main(String[] args) {
 		// Map 컬렉션 프레임워크진행 HashMap<키객체,값객체>   ArrayList<값객체> : 키 자동으로 인덱스설정(0,1,2,3 ~~, 100)
 		Map<Data, String> hm = new HashMap<Data, String>();
+		Map<Data,String>  syncHashMap = Collections.synchronizedMap(hm);
 		
 		// add => put
 		hm.put(new Data(1), new String("kdj1"));
